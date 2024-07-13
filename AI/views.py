@@ -31,3 +31,5 @@ def index(request, q):
     prompt = persona + "Here is the question that the user asked: " + q
     response = model.generate_content(prompt)
     return JsonResponse({'response': response.text})    
+
+
